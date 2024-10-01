@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title>Formulario</title>    
+    <link rel="stylesheet" href="../static/css/index.css">    
+</head>
+<body>
+    <div class="formulario">
+        <h2>Cuestionario de Ingles</h2>
+        <label for=""><strong>Solo puedes seleccionar una respuesta</strong></label>
+        <label for=""></label>
+        <form action="" method="post"> 
+          <p id="id_pregunta" name="pregunta">{{ pregunta.pregunta }}</p>
+          <ul class="no-bullets">
+            {% for opcion in pregunta.opciones %}
+                <li><input type="radio" id="{{ loop.index }}" name="pregunta" value="{{ opcion }}"><label for="{{ loop.index }}">{{ opcion }}</label></li>
+            {% endfor %}
+          </ul>
+          <input type="submit" value="Enviar">
+        </form>
+      </div>
+</body>
+</html>

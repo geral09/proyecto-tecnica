@@ -1,0 +1,50 @@
+
+tutorial python para principiantes mourodev
+https://github.com/mouredev/Hello-Python?tab=readme-ov-fileries
+Web oficial de Python
+https://www.python.org/
+
+Tutorial oficial de Python en Español
+https://docs.python.org/es/3/tutorial/index.html
+
+Repo 30 días de Python
+https://github.com/Asabeneh/30-Days-Of-Python
+
+Juego Codédex para aprender Python
+https://www.codedex.io/
+
+Visual Studio Code: El editor que estoy usando
+https://code.visualstudio.com/
+
+FastAPI: El framework para crear nuestra API Backend
+https://fastapi.tiangolo.com/es/
+
+MongoDB: La base de datos que utiliza nuestro backend
+https://www.mongodb.com/
+
+Deta: Para desplegar nuestra API en la nube
+https://www.deta.sh/
+
+turorial de python w3schools
+https://www.w3schools.com/python/default.asp
+
+turorial de python tutorialspoint
+https://www.tutorialspoint.com/python/index.ht
+
+turorial de python geeksforgeeks
+https://www.geeksforgeeks.org/python-tutorial/
+
+turorial de python programacion ya
+https://www.tutorialesprogramacionya.com/pythonya/
+
+tutorial de python lucas moy
+https://www.youtube.com/watch?v=swdcD6OPMlk&ab_channel=ATLAcademy%28byLucasMoy%29
+
+tutorial de python programacion facil
+https://www.youtube.com/watch?v=BRGZiD5RJrU&ab_channel=Programaci%C3%B3nF%C3%A1cil
+
+tutorial de python de microsoft
+https://learn.microsoft.com/es-es/training/paths/beginner-python/
+
+tutorial de python pythontutor dondepueden copiar codigo y les explica con funciona paso a paso
+https://pythontutor.com/python-compiler.html#mode=edit

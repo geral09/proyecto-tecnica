@@ -1,0 +1,42 @@
+  /* #region footer*/
+footer {
+    width: 100%;
+    /*justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-align: center;*/
+    /*height: 80px;*/
+  }
+
+  .footer-login {
+    padding: 0px 0px 0px 280px;
+    margin: 10px 10px 20px 0px;
+    width: 100%;
+    /*position: 'relative';
+    left: '50%';
+    transform: 'translateX(-50%)';*/
+  }
+
+  .footer-level {
+    padding: 0px 20% 0px 280px;
+    margin: 10px 100px 20px 0px;
+    width: 100%;
+  }
+
+  .footer-quiz {
+    padding: 0px 20% 0px 300px;
+    margin: 10px 100px 20px 0px;
+    width: 100%;
+  }
+
+  .footer-result {
+    padding: 0px 20% 0px 320px;
+  }
+
+  .footer-record {
+    padding: 0px 20% 0px 300px;
+  }
+
+
+
+  /* #endregion footer*/

@@ -1,0 +1,554 @@
+/*importa otroa rchivo css*/
+@import url("header.css");
+@import url("form.css");
+@import url("footer.css");
+@import url("tooltip.css");
+
+
+:root {
+  /*listado de imagenes*/
+  --imagen01: url('../image/fondo01.jpg');
+  --imagen02: url('../image/fondo02.jpg');
+  --imagen03: url('../image/fondo03.jpg');
+  --imagen04: url('../image/fondo04.jpg');
+  --imagen05: url('../image/fondo05.jpg');
+  --imagen06: url('../image/fondo06.jpg');
+  --imagen07: url('../image/fondo07.jpg');
+  --imagen08: url('../image/fondo08.jpg');
+  --imagen09: url('../image/fondo09.jpg');
+  --imagen10: url('../image/fondo10.jpg');
+  /*--------------------------------------------------------------------------*/
+  /*carga la imagen seleccionada */
+  --imagen: var(--imagen01);
+  /*--------------------------------------------------------------------------*/
+  /*listado de colores de fondo*/
+  --color01: #014daf;
+  --color02: #cd2e5d;
+  --color03: #60d2ae;
+
+  --color04: #2e5693;
+  --color05: #ed042f;
+  --color06: #9daa38;
+  --color07: #002742;
+  --color08: #6d428a;
+  --color09: #ff496f;
+  --color10: #e85533;
+  /*--------------------------------------------------------------------------*/
+  /*carga el color de fondo seleccionada */
+  --color: var(--color01);
+  /*--------------------------------------------------------------------------*/
+  /*colores segun fondo*/
+
+  --blanco: #f1f1f1;
+  --negro: #010101;
+  /*carga el color  de fuente seleccionada */
+  --color-fuente: var(--blanco);
+  /*nota los fondos imagen01, imagen02 y imagen07 se ven mejor con color de fuente blanco*/
+  --font-size: 18px;
+  --font-weight: normal;
+}
+
+/* #region index*/
+* {
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+}
+
+nav {
+  /*background-color: var(--color01);*/
+  width: 100px;
+  /*: 20px;*/
+  /*margin: 20px;*/
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  float: right;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  /*font-family: Arial, sans-serif;*/
+  /* display: flexbox; */
+
+  justify-content: center;
+  align-items: center;
+  /* width: 1200px;
+  height: 100vh; */
+  margin: 1px;
+  padding: 1px;
+
+}
+
+
+aside{
+  padding: 10px;
+  margin:  40px 0px;
+  /* margin: 10px; */
+  border: var(--color-fuente) 2px solid !important;
+}
+.textarea_container {
+  width: 600px !important;
+  height: 460px !important;
+}
+
+a {
+  color: var(--color-fuente) !important;
+  background-color: var(--color);
+  font-weight: bold;
+  text-decoration: none;
+  /* Quita el subrayado de los enlaces */
+  font-size: 20px;
+  padding: 6px;
+
+}
+
+a:hover {
+  color: var(--negro) !important;
+  text-decoration: none !important;
+}
+
+
+.questions {
+  width: 500px;
+  margin: 10px 20px 30px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  float: left;
+}
+
+.questions_avanzado {
+  width: 500px;
+  margin: 10px 10px 30px 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: normal;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  float: left;
+}
+
+.questions_items {
+  margin: 0px 10px 0px 10px;
+}
+
+.table-border {
+  border: var(--color-fuente) 2px solid !important;
+}
+
+.table-border-tb {
+  border-top: var(--color-fuente) 2px solid !important;
+  border-bottom: var(--color-fuente) 4px solid !important;
+}
+
+.background-image {
+  background-color: var(--transparente);
+  /*background-image: url("../image/fondo01.jpg");*/
+  background-image: var(--imagen);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.9;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Estilo de la barra lateral */
+.sidebar {
+  /* width: 250px; */
+  /* Ancho de la barra de navegación */
+  /* height: 100vh; */
+  /* Altura completa de la ventana */
+  background-color: transparent;
+  /* Color de fondo */
+  /* position: fixed; */
+  /* Fija la barra lateral a la izquierda */
+  /* top: 0;
+  left: 0;
+  overflow-y: auto; */
+  /* Permite desplazamiento vertical si el contenido es largo */
+}
+
+.sidebar ul {
+  list-style-type: none;
+  /* Quita los puntos de la lista */
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  border-bottom: 1px solid transparent;
+  /* Línea divisoria entre elementos */
+}
+
+.sidebar ul li a {
+  display: block;
+  padding: 15px 20px;
+  /*color: var(--color-fuente);*/
+  /*font-weight: bold;*/
+  /* Color del texto */
+  text-decoration: none;
+  /* Quita el subrayado de los enlaces */
+  font-size: 18px;
+  transition: background-color 0.3s;
+  /* Transición suave para el cambio de color de fondo */
+  cursor: pointer;
+}
+
+.sidebar ul li a:hover {
+  background-color: var(--color03);
+  /* Color de fondo al pasar el ratón por encima */
+}
+
+.sidebar h3 {
+  color: var(--color-fuente);
+  margin: 10px;
+}
+
+.disabled {
+  color: #ccc;
+  /* Color para ítems deshabilitados */
+  pointer-events: none;
+  /* Deshabilita los eventos de clic */
+}
+
+.formulario {
+  background-color: var(--color);
+  /* backdrop-filter: inherit; */
+  border: var(--negro) solid 4px;
+  box-shadow: 10px 5px 20px 5px var(--color07);
+  border-radius: 8px;
+  /* width: max-content; */
+  /* color: #000000; */
+  color: var(--color-fuente);
+  font-weight: bold;
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+
+  /* background-image: url("../image/fondo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; */
+}
+
+
+.formulario h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.formulario a {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario textarea {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.formulario textarea {
+  resize: vertical;
+  height: 100px;
+  /* ajusta el alto según tus necesidades */
+}
+
+.formulario input[type="submit"],
+.formulario button {
+  /*background-color: #7bddff;*/
+  background-color: var(--color02);
+  /*color: #010101;*/
+  color: var(--blanco);
+  border: none;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 15px;
+  width: 300px;
+  cursor: pointer;
+  border-radius: 4px;
+  justify-content: center;
+}
+
+#start_quiz {
+  width: 150px;
+  margin-top: 10px;
+}
+
+.formulario input[type="submit"]:hover,
+.formulario button:hover {
+  /*background-color: #6d709b;*/
+  background-color: var(--color03);
+  color: var(--negro);
+}
+
+
+.no-bullets {
+  list-style-type: none;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 10px 5px 10px;
+  margin: 0px 10px 5px 10px;
+  /*position: relative;*/
+  /* Añadir para posicionar el tooltip */
+}
+
+.button-container a,
+.button-container input[type="submit"] .button-container button[type="submit"],
+.button-container-right a,
+.button-container-right input[type="submit"] .button-container-right button[type="submit"] {
+  /*background-color: #7bddff;*/
+  background-color: var(--color02);
+  /*color: #010101;*/
+  color: var(--blanco);
+  border: none;
+  padding: 12px 20px !important;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  width: 110 !important;
+  cursor: pointer;
+  border-radius: 4px;
+  justify-content: center;
+}
+
+.button-container a:hover,
+.button-container-right a:hover {
+  background-color: var(--color03);
+  /*color: #010101;*/
+}
+
+
+.button-container-right {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding: 0px 10px 5px 10px;
+  margin: 0px 10px 5px 10px;
+  justify-content: space-between;
+  width: 100%;
+
+}
+
+.button-container-left {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 0px 10px 5px 10px;
+  margin: 0px 10px 5px 10px;
+}
+
+.playback {
+  background-color: var(--color02);
+  color: #010101;
+  border: none;
+  padding: 12px 20px !important;
+  margin: 10px 0px 10px 0px !important;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  width: 160px !important;
+  cursor: pointer;
+  border-radius: 4px;
+  justify-content: center;
+}
+
+.btn-menu {
+  background-color: var(--color02);
+  color: #010101;
+  border: none;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  width: 110px !important;
+  cursor: pointer;
+  border-radius: 4px;
+  justify-content: center;
+}
+
+.image-info {
+  width: 150x;
+  /* Ajusta el tamaño */
+  height: 150px;
+  /* Ajusta el tamaño */
+  margin: 0px 50px 10px 50px;
+}
+
+.icono {
+  width: 20px;
+  /* Ajusta el tamaño */
+  height: 20px;
+  /* Ajusta el tamaño */
+  margin: 0px 5px 0px 5px;
+  /* Espacio entre la imagen y el input */
+  /*margin-bottom: 2px;*/
+  /* Espacio entre la imagen y el input */
+}
+
+.playback:hover img,
+button:hover img,
+a:hover img {
+  filter: invert(100%);
+}
+
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title-container-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title-container-right {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  flex-direction: column;
+}
+
+.title-container-left-row {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.title-container-left {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-direction: column;
+}
+
+
+.form-container {
+  display: flex;
+  align-items: start;
+  justify-content: right;
+  flex-direction: column;
+  padding: 0px 10px 5px 10px;
+  margin: 0px 10px 5px 10px;
+}
+
+.autor {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0px 5px 0px 5px;
+  padding: 0px 5px 0px 5px;
+}
+
+.autor-color {
+  background-color: var(--color);
+  color: var(--color-fuente);
+  border: var(--negro) solid 4px;
+  box-shadow: 10px 5px 20px 5px var(--color07);
+  border-radius: 8px;
+}
+
+.user {
+  color: var(--color-fuente);
+  /* background: #010101; */
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 20px;
+  padding-top: 20px;
+  /* opacity: 0.9; */
+}
+
+nav {
+  color: var(--color-fuente);
+  /* background: #010101;
+  font-size: 26px;
+  margin: 10px;
+  opacity: 0.9; */
+}
+
+.table-container-overflow-x {
+  overflow-x: auto;
+  /* Permite la barra de desplazamiento horizontal si la tabla es ancha */
+}
+
+.table-container-overflow-y {
+  overflow-y: auto;
+  /* Permite la barra de desplazamiento vertical si la tabla es ancha */
+}
+
+.table-container-overflow-all {
+  overflow-x: auto;
+  /* Permite la barra de desplazamiento horizontal si la tabla es ancha */
+  overflow-y: auto;
+  /* Permite la barra de desplazamiento vertical si la tabla es ancha */
+  /* width: 680px; */
+  height: 350px;
+  width: auto;
+  margin: 0px 0px 20px 0px;
+  border-top: var(--color-fuente) 2px solid !important;
+  border-bottom: var(--color-fuente) 4px solid !important;
+  /* height: auto; */
+}
+
+.table-container-overflow-all table tr td {
+  padding: 4px 3px 4px 4px;
+  border: 1px solid #ccc;
+  width: auto;
+}
+
+.item:hover {
+  background-color: var(--color03);
+  color: var(--negro);
+}
+
+.item input[type="radio"]:hover {
+  background-color: var(--color03);
+  color: var(--negro);
+
+}
+
+
+
+/* #endregion index*/

@@ -1,0 +1,612 @@
+/* #region index*/
+/* Media Queries */
+
+/* For screens between 300px and 700px */
+@media (min-width: 300px) and (max-width: 700px) {
+    nav {
+      width: 80px; /* Adjust navigation width */
+    }
+
+    .questions, .questions_avanzado {
+      width: 100%; /* Full width for smaller screens */
+      margin: 10px 0; /* Adjust margins */
+    }
+
+    .textarea_container {
+      width: 100%; /* Full width */
+    }
+  }
+
+  /* For screens between 701px and 900px */
+  @media (min-width: 701px) and (max-width: 900px) {
+    nav {
+      width: 100px; /* Set to default width */
+    }
+
+    .questions, .questions_avanzado {
+      width: 80%; /* Adjust width */
+    }
+
+    .formulario input[type="text"],
+    .formulario input[type="email"],
+    .formulario textarea {
+      width: 100%; /* Full width for inputs */
+    }
+  }
+
+  /* For screens between 901px and 1300px */
+  @media (min-width: 901px) and (max-width: 1300px) {
+    nav {
+      width: 120px; /* Wider navigation */
+    }
+
+    .questions, .questions_avanzado {
+      width: 60%; /* Adjust width */
+    }
+
+    .formulario {
+      width: 80%; /* Adjust form width */
+    }
+  }
+
+  /* For screens between 1301px and 1440px */
+  @media (min-width: 1301px) and (max-width: 1440px) {
+    nav {
+      width: 150px; /* Further adjustments if needed */
+    }
+
+    .questions, .questions_avanzado {
+      width: 50%; /* Keep adjusting widths */
+    }
+  }
+
+  /* For screens between 1441px and 1512px */
+  @media (min-width: 1441px) and (max-width: 1512px) {
+    nav {
+      width: 180px; /* Set navigation width */
+    }
+  }
+
+  /* For screens between 1513px and 1792px */
+  @media (min-width: 1513px) and (max-width: 1792px) {
+    nav {
+      width: 200px; /* Adjust width */
+    }
+  }
+
+  /* For screens between 1793px and 1920px */
+  @media (min-width: 1793px) and (max-width: 1920px) {
+    nav {
+      width: 220px; /* Adjust width */
+    }
+  }
+
+  /* For screens greater than 1920px */
+  @media (min-width: 1921px) {
+    nav {
+      width: 250px; /* Max width for nav */
+    }
+
+    .questions, .questions_avanzado {
+      width: 40%; /* Adjust for large screens */
+    }
+  }
+
+/* #endregion index*/
+
+/* #region main*/
+/* #region main */
+
+main {
+    color: #ccc;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    bottom: 0;
+    left: 0;
+}
+
+.main-login,
+.main-level,
+.main-quiz,
+.main-result,
+.main-record {
+    color: #ccc;
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20% 0px 28%; /* Default padding for main-level */
+}
+
+/* Media Queries */
+
+/* For screens between 300px and 700px */
+@media (min-width: 300px) and (max-width: 700px) {
+    main {
+        flex-direction: column; /* Stack elements */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .main-login,
+    .main-level,
+    .main-quiz,
+    .main-result,
+    .main-record {
+        width: 90%; /* Adjust width for smaller screens */
+        padding: 10px 5%; /* Adjust padding */
+    }
+}
+
+/* For screens between 701px and 900px */
+@media (min-width: 701px) and (max-width: 900px) {
+    .main-login,
+    .main-level,
+    .main-quiz,
+    .main-result,
+    .main-record {
+        width: 80%; /* Slightly wider */
+        padding: 10px 10%; /* Adjust padding */
+    }
+}
+
+/* For screens between 901px and 1300px */
+@media (min-width: 901px) and (max-width: 1300px) {
+    .main-login,
+    .main-level,
+    .main-quiz,
+    .main-result,
+    .main-record {
+        width: 70%; /* Adjust width */
+        padding: 10px 15%; /* Adjust padding */
+    }
+}
+
+/* For screens between 1301px and 1440px */
+@media (min-width: 1301px) and (max-width: 1440px) {
+    .main-login,
+    .main-level,
+    .main-quiz,
+    .main-result,
+    .main-record {
+        width: 60%; /* Adjust width */
+        padding: 10px 20%; /* Adjust padding */
+    }
+}
+
+/* For screens between 1441px and 1512px */
+@media (min-width: 1441px) and (max-width: 1512px) {
+    .main-login,
+    .main-level,
+    .main-quiz,
+    .main-result,
+    .main-record {
+        width: 50%; /* Adjust width */
+        padding: 10px 25%; /* Adjust padding */
+    }
+}
+
+/* For screens between 1513px and 1792px */
+@media (min-width: 1513px) and (max-width: 1792px) {
+    .main-login,
+    .main-level,
+    .main-quiz,
+    .main-result,
+    .main-record {
+        width: 45%; /* Adjust width */
+        padding: 10px 30%; /* Adjust padding */
+    }
+}
+
+/* For screens between 1793px and 1920px */
+@media (min-width: 1793px) and (max-width: 1920px) {
+    .main-login,
+    .main-level,
+    .main-quiz,
+    .main-result,
+    .main-record {
+        width: 40%; /* Adjust width */
+        padding: 10px 35%; /* Adjust padding */
+    }
+}
+
+/* For screens greater than 1920px */
+@media (min-width: 1921px) {
+    .main-login,
+    .main-level,
+    .main-quiz,
+    .main-result,
+    .main-record {
+        width: 35%; /* Adjust width for large screens */
+        padding: 10px 40%; /* Adjust padding */
+    }
+}
+
+/* #endregion main */
+
+/* #endregion main*/
+
+/* #region form*/
+/* #region form */
+.form-login {
+    padding: 20px;
+    margin: 20px 30% 20px 440px;
+    width: 400px;
+    height: 400px;
+  }
+
+  .form-level {
+    padding: 3px 4px 3px 10px;
+    margin: 2px 4px 2px 390px;
+    width: 600px;
+    height: 680px;
+  }
+
+  .form_quiz {
+    padding: 10px 20px 0px 20px;
+    margin: 10px 10px 0px 300px;
+    width: 700px;
+    height: 600px;
+  }
+
+  .form_quiz_avanzado {
+    padding: 10px 20px 10px 20px;
+    margin: 10px 10px 10px 300px;
+    width: 700px;
+    height: 1100px;
+  }
+
+  .form-result {
+    padding: 0px 30px 30px 30px;
+    margin: 10px 30px 20px 320px;
+    width: 700px;
+    height: 600px;
+  }
+
+  .form-record {
+    padding: 20px;
+    margin: 20px 20px 20px 300px;
+    width: 700px;
+    height: 550px;
+  }
+
+  /* Media Queries */
+
+  /* For screens between 300px and 700px */
+  @media (min-width: 300px) and (max-width: 700px) {
+    .form-login,
+    .form-level,
+    .form_quiz,
+    .form_quiz_avanzado,
+    .form-result,
+    .form-record {
+      margin: 10px auto; /* Center forms */
+      width: 90%; /* Full width on small screens */
+      height: auto; /* Adjust height to content */
+    }
+  }
+
+  /* For screens between 701px and 900px */
+  @media (min-width: 701px) and (max-width: 900px) {
+    .form-login,
+    .form-level,
+    .form_quiz,
+    .form_quiz_avanzado,
+    .form-result,
+    .form-record {
+      margin: 10px auto; /* Center forms */
+      width: 80%; /* Wider on medium screens */
+      height: auto; /* Adjust height to content */
+    }
+  }
+
+  /* For screens between 901px and 1300px */
+  @media (min-width: 901px) and (max-width: 1300px) {
+    .form-login,
+    .form-level,
+    .form_quiz,
+    .form_quiz_avanzado,
+    .form-result,
+    .form-record {
+      margin: 20px auto; /* Center forms */
+      width: 70%; /* Adjust width */
+      height: auto; /* Adjust height to content */
+    }
+  }
+
+  /* For screens between 1301px and 1440px */
+  @media (min-width: 1301px) and (max-width: 1440px) {
+    .form-login,
+    .form-level,
+    .form_quiz,
+    .form_quiz_avanzado,
+    .form-result,
+    .form-record {
+      margin: 20px auto; /* Center forms */
+      width: 60%; /* Adjust width */
+      height: auto; /* Adjust height to content */
+    }
+  }
+
+  /* For screens between 1441px and 1512px */
+  @media (min-width: 1441px) and (max-width: 1512px) {
+    .form-login,
+    .form-level,
+    .form_quiz,
+    .form_quiz_avanzado,
+    .form-result,
+    .form-record {
+      margin: 20px auto; /* Center forms */
+      width: 50%; /* Adjust width */
+      height: auto; /* Adjust height to content */
+    }
+  }
+
+  /* For screens between 1513px and 1792px */
+  @media (min-width: 1513px) and (max-width: 1792px) {
+    .form-login,
+    .form-level,
+    .form_quiz,
+    .form_quiz_avanzado,
+    .form-result,
+    .form-record {
+      margin: 20px auto; /* Center forms */
+      width: 40%; /* Adjust width */
+      height: auto; /* Adjust height to content */
+    }
+  }
+
+  /* For screens between 1793px and 1920px */
+  @media (min-width: 1793px) and (max-width: 1920px) {
+    .form-login,
+    .form-level,
+    .form_quiz,
+    .form_quiz_avanzado,
+    .form-result,
+    .form-record {
+      margin: 20px auto; /* Center forms */
+      width: 35%; /* Adjust width */
+      height: auto; /* Adjust height to content */
+    }
+  }
+
+  /* For screens greater than 1920px */
+  @media (min-width: 1921px) {
+    .form-login,
+    .form-level,
+    .form_quiz,
+    .form_quiz_avanzado,
+    .form-result,
+    .form-record {
+      margin: 20px auto; /* Center forms */
+      width: 30%; /* Adjust width for large screens */
+      height: auto; /* Adjust height to content */
+    }
+  }
+
+  /* #endregion form */
+
+/* #endregion form*/
+
+/* #region header*/
+/* #region header */
+header {
+    /* background-color: var(--transparente); */
+    text-align: center;
+    float: left;
+    /* width: 100%; */
+    /* padding-bottom: 100px; */
+    /* margin-bottom: 100px; */
+    position: fixed; /* Fija el header en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ocupa el ancho completo */
+    /* padding: 10px; */
+    /* border-bottom: 1px solid #ddd; */
+    margin: 50px 100px 10px 0px;
+
+    z-index: 100; /* Asegura que el header esté sobre otros elementos */
+  }
+
+  header a {
+    color: var(--color-fuente);
+    background-color: var(--color);
+    font-weight: bold;
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    font-size: 20px;
+    border: var(--negro) solid 4px;
+    box-shadow: 10px 5px 20px 5px var(--color07);
+    border-radius: 8px;
+    padding: 6px;
+  }
+
+  header a:hover {
+    background-color: var(--color03);
+  }
+
+  .header-login,
+  .header-level,
+  .header-quiz,
+  .header-result,
+  .header-record {
+    text-align: left !important;
+  }
+
+  .header-login {
+    padding: 0px 100px 10px 0px;
+  }
+
+  .header-level {
+    padding: 0px 300px 10px 0px;
+  }
+
+  .header-quiz {
+    padding: 0px 200px 10px 0px;
+  }
+
+  .header-result {
+    padding: 0px 200px 10px 0px;
+  }
+
+  .header-record {
+    padding: 0px 200px 10px 0px;
+  }
+
+  /* Media Queries */
+
+  /* For screens between 300px and 700px */
+  @media (min-width: 300px) and (max-width: 700px) {
+    header {
+      margin: 20px 10px; /* Reduce margins for small screens */
+    }
+
+    header a {
+      font-size: 16px; /* Smaller font size */
+      padding: 4px; /* Less padding */
+    }
+  }
+
+  /* For screens between 701px and 900px */
+  @media (min-width: 701px) and (max-width: 900px) {
+    header {
+      margin: 30px 20px; /* Adjust margins for medium screens */
+    }
+
+    header a {
+      font-size: 18px; /* Slightly smaller font size */
+    }
+  }
+
+  /* For screens between 901px and 1300px */
+  @media (min-width: 901px) and (max-width: 1300px) {
+    header {
+      margin: 40px 50px; /* Adjust margins */
+    }
+
+    header a {
+      font-size: 20px; /* Standard font size */
+    }
+  }
+
+  /* For screens between 1301px and 1440px */
+  @media (min-width: 1301px) and (max-width: 1440px) {
+    header {
+      margin: 50px 80px; /* Maintain wider margins */
+    }
+  }
+
+  /* For screens greater than 1440px */
+  @media (min-width: 1441px) {
+    header {
+      margin: 50px 100px; /* Standard margins for large screens */
+    }
+  }
+
+  /* #endregion header */
+
+/* #endregion header*/
+
+/* #region footer*/
+/* #region footer */
+footer {
+    width: 100%;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* text-align: center; */
+    /* height: 80px; */
+}
+
+.footer-login {
+    padding: 0px 0px 0px 280px;
+    margin: 10px 10px 20px 0px;
+    width: 100%;
+    /* position: 'relative'; */
+    /* left: '50%'; */
+    /* transform: 'translateX(-50%)'; */
+}
+
+.footer-level {
+    padding: 0px 20% 0px 280px;
+    margin: 10px 100px 20px 0px;
+    width: 100%;
+}
+
+.footer-quiz {
+    padding: 0px 20% 0px 300px;
+    margin: 10px 100px 20px 0px;
+    width: 100%;
+}
+
+.footer-result {
+    padding: 0px 20% 0px 320px;
+}
+
+.footer-record {
+    padding: 0px 20% 0px 300px;
+}
+
+/* Media Queries */
+
+/* For screens between 300px and 700px */
+@media (min-width: 300px) and (max-width: 700px) {
+    .footer-login,
+    .footer-level,
+    .footer-quiz,
+    .footer-result,
+    .footer-record {
+        padding: 0px 10px; /* Reduce padding */
+        margin: 10px 0; /* Center margins */
+        width: auto; /* Allow content to fill available space */
+    }
+}
+
+/* For screens between 701px and 900px */
+@media (min-width: 701px) and (max-width: 900px) {
+    .footer-login,
+    .footer-level,
+    .footer-quiz {
+        padding: 0px 15%; /* Adjust padding for medium screens */
+        margin: 10px 20px; /* Centered margins */
+    }
+
+    .footer-result,
+    .footer-record {
+        padding: 0px 15%; /* Adjust padding */
+    }
+}
+
+/* For screens between 901px and 1300px */
+@media (min-width: 901px) and (max-width: 1300px) {
+    .footer-login,
+    .footer-level,
+    .footer-quiz {
+        padding: 0px 20%; /* Standard padding */
+        margin: 10px 30px; /* Slightly wider margins */
+    }
+}
+
+/* For screens between 1301px and 1440px */
+@media (min-width: 1301px) and (max-width: 1440px) {
+    .footer-login,
+    .footer-level,
+    .footer-quiz {
+        padding: 0px 25%; /* Increase padding for larger screens */
+        margin: 10px 40px; /* Maintain wider margins */
+    }
+}
+
+/* For screens greater than 1440px */
+@media (min-width: 1441px) {
+    .footer-login,
+    .footer-level,
+    .footer-quiz {
+        padding: 0px 280px; /* Original padding */
+        margin: 10px 100px; /* Original margins */
+    }
+}
+
+/* #endregion footer */
+
+/* #endregion footer*/

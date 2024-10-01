@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/index.css">    
+    <title>Quiz</title>
+</head>
+<body>    
+    <form action="{{ url_for('corecta') }}" method="post" class="formulario">
+        <h1>Pregunta de prueba</h1>
+        <label for=""><strong>Escoje la respuesta correcta</strong></label>
+        <p>{{ pregunta['pregunta'] }}</p>
+        {% for opcion in pregunta['opciones'] %}
+            <input type="radio" id="{{ opcion }}" name="opcion" value="{{ opcion }}" required>            
+            <label for="{{ opcion }}">{{ opcion }}</label><br>
+        {% endfor %}
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
