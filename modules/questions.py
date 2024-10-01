@@ -232,7 +232,7 @@ questions_advanced = [
     {"title": "2", "question": "Fans show their support by wearing team _____.", "options": [
         "colors", "food", "flags", "names"], "answer": "colors"},
     # Pregunta 12
-    {"title": "2", "question": "", "options": [
+    {"title": "2", "question": "Football promotes physical _____ among players.", "options": [
         "fitness", "injury", "fatigue", "stress"], "answer": "fitness"},
     # Pregunta 13
     {"title": "3", "question": "A balanced diet provides essential _____.", "options": [
