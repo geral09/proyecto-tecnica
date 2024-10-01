@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <! -- cargs estilos a la pagina -->
+        <!--<link rel="stylesheet" href="../static/css/index.css" />
+        <link rel="stylesheet" href="../static/css/bootstrap.min.css" />-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" />
+        <! -- titulo de la pagina -->
+            <title>{{title}}</title>
+            <! -- se carga el icono a la pagina -->
+                <link rel="icon" sizes="16x16 32x32 48x48" type="image/png" href="../static/image/favicon.png" />
+</head>
+
+<body class="background-image">
+    <header></header>
+    <main class="main-login">
+        <form action="{{ url_for('accses') }}" method="post" class="formulario form-login">
+            <div class="title-container">
+                <h3>Registro</h3>
+            </div>
+            <div class="form-container">
+                <label for><strong>Registrate para poder iniciar</strong></label>
+                <label for="name">Nombre:</label>
+                <input id="name" name="name" type="text" placeholder="Nombre" required />
+                <label for="email">Coreo Electronico:</label>
+                <input id="email" name="email" type="email" placeholder="@ Correo Electronico" required/>
+            </div>
+            <div class="button-container">
+                <!--<input type="submit" value="Registrar"/>-->
+                <button id="register" type="submit">Registrar
+                    <img src="{{ url_for('static', filename='image/enter-w.png') }}" alt="Icono" class="icono">
+                </button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div class="footer-login">
+            <label class="autor autor-color">&copy Desarrollado por {{authors}}</label>
+        </div>
+    </footer>
+    <!--carga los escript javascript a ala pagina-->
+    <!--<script src="../static/js/index.js"></script>
+        <script src="../static/js/jquery-3.2.1.slim.min.js"></script>
+        <script src="../static/js/popper.min.js"></script>
+        <script src="../static/js/bootstrap.min.js"></script>-->
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery-3.2.1.slim.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/audio.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/responsive.js') }}"></script>
+</body>
+
+</html>

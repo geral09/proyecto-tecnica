@@ -1,0 +1,37 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title>Formulario</title>    
+    <link rel="stylesheet" href="../static/css/index.css">    
+</head>
+<body>
+    <div class="formulario">
+        <h2>Cuestionario de Ingles</h2>
+        <label for=""><strong>Solo puedes seleccionar una respuesta</strong></label>
+        <label for=""></label>
+        <form action="/submit" method="post"> 
+          <p id="id_pregunta" name="pregunta">1. Where significa</p>
+          <ul class="no-bullets">
+            <li><input type="radio" id="a" name="pregunta"><label for="a">A. Donde</label></li>
+            <li><input type="radio" id="b" name="pregunta"><label for="b">B. Cuando</label></li>
+            <li><input type="radio" id="c" name="pregunta"><label for="c">C. Como</label></li>
+            <li><input type="radio" id="d" name="pregunta"><label for="d">D. Porque</label></li>
+          </ul>
+          <!-- <input type="text" id="id_nombre" name="nombre" placeholder="" required  value="">-->
+          <!--<input type="email" name="email" placeholder="Correo Electrónico" required>
+          <textarea name="mensaje" placeholder="Mensaje" required></textarea>-->
+          <input type="submit" value="Enviar">
+        </form>
+      </div>
+
+   <!-- <form action="/submit" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+        <input type="submit" value="Enviar">
+    </form> -->
+</body>
+</html>
+

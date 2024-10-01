@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- cargs estilos a la pagina -->
+    <!--<link rel="stylesheet" href="../static/css/index.css" />
+        <link rel="stylesheet" href="../static/css/bootstrap.min.css" />-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" />
+    <!-- titulo de la pagina -->
+    <title>{{title}}</title>
+    <!-- se carga el icono a la pagina -->
+    <link rel="icon" sizes="16x16 32x32 48x48" type="image/png" href="../static/image/favicon.png" />
+</head>
+
+<body class="background-image">
+    <header class="header-record">
+        <!-- <nav>
+            <a href="{{ url_for('start') }}">Salir</a>
+            <br>
+            <br>
+            <br>
+            <a href="{{ url_for('level') }}">Volver</a>
+        </nav>-->
+    </header>
+    <main class="main-record">
+        <div class="formulario form-record">
+            <div class="container mt-4">
+                <div class="row-center">
+                    <div class="column">
+                        <h3>Historial de Test de usuario {{ name }}</h3>
+                        <div class="table-container table-container-overflow-all">
+                            <table class="table table-striped">
+                                <thead class="table-border">
+                                    <tr class="table-border">
+                                        <th class="table-border-tb">Nivel</th>
+                                        <th class="table-border-tb">Correctas</th>
+                                        <th class="table-border-tb">Incorrectas</th>
+                                        <th class="table-border-tb">Total</th>
+                                        <th class="table-border-tb">Fecha</th>
+                                        <th class="table-border-tb">Hora</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-border">
+                                    {% for user in user_quiz %}
+                                    <tr class="table-border">
+                                        <td class="table-border">{{user['quiz_level']}}</td>
+                                        <td class="table-border">{{user['question_correct']}}</td>
+                                        <td class="table-border">{{user['question_incorrect']}}</td>
+                                        <td class="table-border">{{user['question_total']}}</td>
+                                        <td class="table-border">{{user['creation_date'].split()[0]}}</td>
+                                        <td class="table-border">{{user['creation_date'].split()[1]}}</td>
+                                    </tr>
+                                    {% endfor %}
+                                    <!-- Agrega más filas según sea necesario -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-container-right">
+                    <a href="{{ url_for('start') }}">Salir
+                        <img src="{{ url_for('static', filename='image/exit-w.png') }}" alt="Icono Salir" class="icono">
+                    </a>
+                    <a href="{{ url_for('level') }}">Inicio
+                        <img src="{{ url_for('static', filename='image/home-w.png') }}" alt="Icono Salir" class="icono">
+                    </a>
+                </div>
+            </div>
+    </main>
+
+    <!--carga los escript javascript a ala pagina-->
+    <!--<script src="../static/js/index.js"></script>
+        <script src="../static/js/jquery-3.2.1.slim.min.js"></script>
+        <script src="../static/js/popper.min.js"></script>
+        <script src="../static/js/bootstrap.min.js"></script>-->
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery-3.2.1.slim.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/audio.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/responsive.js') }}"></script>
+</body>
+
+</html>

@@ -1,0 +1,384 @@
+/* Estilos para pantallas de más de 600px pero menos de 1200px */
+/*@media (min-width: 400px) and (max-width: 1199px) {*/
+@media (min-width: 300px) and (max-width: 700px) {
+
+    .background-image {
+        /*width: 200px;*/
+        height: 900px;
+    }
+
+
+    .formulario input[type="text"],
+    .formulario input[type="email"],
+    .formulario textarea {
+        width: 280px;
+
+    }
+
+    .form-login {
+        padding: 10px 20px 20px 20px;
+        margin: 40px 5px 40px 4px;
+        width: 380px;
+        height: 400px;
+        /*position: 'relative';
+        left: '50%';
+        transform: 'translateX(-50%)';*/
+    }
+
+    .form-level {
+        padding: 3px 10px 3px 10px;
+        margin: 2px 10px 2px 390px;
+        width: 500px;
+        height: 620px;
+    }
+
+    .form-quiz {
+        padding: 10px 20px 0px 20px;
+        margin: 10px 10px 0px 300px;
+        width: 700px;
+        height: 520px;
+    }
+
+    .form-result {
+        padding: 0px 30px 30px 30px;
+        margin: 10px 30px 20px 320px;
+        width: 700px;
+        height: 500px;
+    }
+
+    .form-record {
+        padding: 20px 20px 20px 20px;
+        margin: 20px 20px 20px 300px;
+        width: 700px;
+        height: 460px;
+    }
+
+    .footer-login {
+        padding: 0px 0px 0px 4px;
+        margin: 10px 10px 20px 0px;
+        width: 100%;
+        /*position: 'relative';
+        left: '50%';
+        transform: 'translateX(-50%)';*/
+    }
+
+    .footer-level {
+        padding: 0px 20% 0px 280px;
+        margin: 10px 100px 20px 0px;
+        width: 100%;
+    }
+
+    .footer-quiz {
+        padding: 0px 20% 0px 300px;
+        margin: 10px 100px 20px 0px;
+        width: 100%;
+    }
+
+    .footer-result {
+        padding: 0px 20% 0px 320px;
+    }
+
+    .footer-record {
+        padding: 0px 20% 0px 300px;
+    }
+
+    .button-container-right{
+        flex-direction: column;
+    }
+.img-info-nivel{
+    width: 40x;
+    /* Ajusta el tamaño */
+    height: 40px;
+}
+
+
+}
+
+/* #region header*/
+/* Estilos para móviles */
+@media (max-width: 600px) {
+    header {
+        margin: 20px 10px 10px 10px;
+        padding: 10px;
+    }
+
+    header a {
+        font-size: 16px;
+        padding: 4px;
+    }
+
+    .header-login,
+    .header-level,
+    .header-quiz,
+    .header-result,
+    .header-record {
+        padding: 0px 20px 10px 20px;
+    }
+}
+
+/* Estilos para tabletas */
+@media (min-width: 601px) and (max-width: 900px) {
+    header {
+        margin: 30px 20px 10px 20px;
+        padding: 10px;
+    }
+
+    header a {
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    .header-login,
+    .header-level,
+    .header-quiz,
+    .header-result,
+    .header-record {
+        padding: 0px 50px 10px 50px;
+    }
+}
+
+/* Estilos para pantallas de escritorio */
+@media (min-width: 901px) {
+    header {
+        margin: 50px 100px 10px 0px;
+        padding: 10px;
+    }
+
+    header a {
+        font-size: 20px;
+        padding: 6px;
+    }
+
+    .header-login {
+        padding: 0px 100px 10px 0px;
+    }
+
+    .header-level {
+        padding: 0px 300px 10px 0px;
+    }
+
+    .header-quiz,
+    .header-result,
+    .header-record {
+        padding: 0px 200px 10px 0px;
+    }
+}
+
+/* #endregion header*/
+
+/* #region clase imagen*/
+
+/* #endregion clase imagen*/
+@media (min-width: 300px) and (max-width: 600px) {
+    .background-image {
+        opacity: 0.8;
+        /* Ajusta la opacidad para móviles */
+        height: auto;
+        /* Permite que la altura se ajuste automáticamente */
+    }
+}
+
+/* Estilos para tabletas */
+@media (min-width: 601px) and (max-width: 900px) {
+    .background-image {
+        opacity: 0.85;
+        /* Ajusta la opacidad para tabletas */
+        height: 100%;
+        /* Mantiene la altura al 100% */
+    }
+}
+
+/* Estilos para pantallas de escritorio */
+@media (min-width: 901px) {
+    .background-image {
+        /* Aquí puedes agregar estilos específicos para pantallas grandes si es necesario */
+        opacity: 0.9;
+        /* Mantiene la opacidad original */
+    }
+}
+
+/* Estilos para móviles */
+
+
+
+/* #region clasr form*/
+/* Estilos para móviles */
+@media (max-width: 600px) {
+    .form-login {
+        margin: 10px 5%;
+        width: auto;
+        height: auto;
+    }
+
+    .form-level {
+        margin: 10px 5%;
+        width: auto;
+        height: auto;
+    }
+
+    .form_quiz,
+    .form_quiz_avanzado,
+    .form-result,
+    .form-record {
+        margin: 10px 5%;
+        width: auto;
+        height: auto;
+    }
+
+    .formulario input[type="text"],
+    .formulario input[type="email"],
+    .formulario textarea {
+        width: auto;
+    }
+}
+
+/* Estilos para tabletas */
+@media (min-width: 601px) and (max-width: 900px) {
+    .form-login {
+        margin: 10px 10%;
+        width: 80%;
+        height: auto;
+    }
+
+    .form-level {
+        margin: 10px 10%;
+        width: 90%;
+        height: auto;
+    }
+
+    .form_quiz,
+    .form_quiz_avanzado,
+    .form-result,
+    .form-record {
+        margin: 10px 10%;
+        width: 90%;
+        height: auto;
+    }
+    .formulario input[type="text"],
+    .formulario input[type="email"],
+    .formulario textarea {
+        width: 100%;
+    }
+}
+
+/* Estilos para pantallas de escritorio */
+@media (min-width: 901px) {
+    .form-login {
+        margin: 20px 30% 20px 440px;
+        width: 400px;
+        height: 400px;
+    }
+
+    .form-level {
+        margin: 2px 4px 2px 390px;
+        width: 600px;
+        height: 680px;
+    }
+
+    .form_quiz {
+        margin: 10px 10px 0px 300px;
+        width: 700px;
+        height: 600px;
+    }
+
+    .form_quiz_avanzado {
+        margin: 10px 10px 10px 300px;
+        width: 700px;
+        height: 1100px;
+    }
+
+    .form-result {
+        margin: 10px 30px 20px 320px;
+        width: 700px;
+        height: 600px;
+    }
+
+    .form-record {
+        margin: 20px 20px 20px 300px;
+        width: 700px;
+        height: 550px;
+    }
+}
+
+/* #endregion clasr form*/
+
+
+/* #region footer*/
+/* Estilos para móviles */
+@media (max-width: 600px) {
+    footer {
+        padding: 10px;
+    }
+
+    .footer-login,
+    .footer-level,
+    .footer-quiz,
+    .footer-result,
+    .footer-record {
+        padding: 10px 5%;
+        margin: 10px 5% 20px 0px;
+    }
+}
+
+/* Estilos para tabletas */
+@media (min-width: 601px) and (max-width: 900px) {
+    footer {
+        padding: 10px;
+    }
+
+    .footer-login,
+    .footer-level,
+    .footer-quiz,
+    .footer-result,
+    .footer-record {
+        padding: 10px 15%;
+        margin: 10px 10% 20px 0px;
+    }
+}
+
+/* Estilos para pantallas de escritorio */
+@media (min-width: 901px) {
+    /* footer { */
+        /* Aquí puedes agregar estilos específicos para pantallas grandes si es necesario */
+    /* } */
+
+    .footer-login {
+        padding: 0px 0px 0px 280px;
+        margin: 10px 10px 20px 0px;
+    }
+
+    .footer-level {
+        padding: 0px 20% 0px 280px;
+        margin: 10px 100px 20px 0px;
+    }
+
+    .footer-quiz {
+        padding: 0px 20% 0px 300px;
+        margin: 10px 100px 20px 0px;
+    }
+
+    .footer-result {
+        padding: 0px 20% 0px 320px;
+    }
+
+    .footer-record {
+        padding: 0px 20% 0px 300px;
+    }
+}
+
+
+/* #endregion footer*/
+
+
+/*@media (min-width: 780px) {
+    /*.background-image {
+        background-color: var(--transparente);
+       background-image: url("../image/fondo01.jpg");
+        background-image: var(--imagen);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        opacity: 0.9;
+         width: 100%;
+    }
+}*/

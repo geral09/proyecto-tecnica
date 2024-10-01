@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- cargs estilos a la pagina -->
+        <!--<link rel="stylesheet" href="../static/css/index.css" />
+        <link rel="stylesheet" href="../static/css/bootstrap.min.css" />-->
+        <link rel="stylesheet"
+            href="{{ url_for('static', filename='css/index.css') }}" />
+        <link rel="stylesheet"
+            href="{{url_for('static', filename='css/responsive.css') }}" />
+        <link rel="stylesheet"
+            href="{{ url_for('static', filename='css/bootstrap.min.css') }}" />
+        <!-- titulo de la pagina -->
+        <title>{{title}}</title>
+        <!-- se carga el icono a la pagina -->
+        <link rel="icon" sizes="16x16 32x32 48x48" type="image/png"
+            href="../static/image/favicon.png" />
+
+    </head>
+    <body class="background-image">
+        <header class="header-quiz">
+        </header>
+        <main class="main-quiz">
+            <form id="form-questions" action="{{ url_for('answer') }}"
+                method="post"
+                class="formulario {{form_class_size}}">
+                <section class="title-container-left-row">
+                    <div class="title-container-left">
+                        <h3>Test Question</h3>
+                        <h3 class="user">Usuario : {{ name }}</h3>
+                        <p id="selected-item">Nivel de Prueba: {{selected}}</p>
+                        <p class="text-left">Preguta {{index + 1}} de
+                            {{total_questions}}</p>
+                    </div>
+                    <div>
+                        {% set imagen = "inicial" %}
+                        {% if selected != "Principiante" and selected !=
+                        "Intermedio" and selected != "Avanzado" %}
+                        {% set imagen = "inicial" %}
+                        {% else %}
+                        {% set imagen = selected.lower() %}
+                        {% endif %}
+                        <img id="img-info-nivel"
+                            src="{{ url_for('static', filename='image/' + imagen + '.png') }}"
+                            alt="Icono Iniciar" class="image-info">
+                    </div>
+                </section>
+                <div class="form-container">
+                    {% set text_info = "" %}
+                    {% if selected == "Avanzado" %}
+                    {% set text_info = "Lee detenidamente el siguiente texto completa las palabras en blanco" %}
+                    {% else %}
+                    {% set text_info = "Escoje la respuesta correcta" %}
+                    {% endif %}
+                    <label for><strong>{{text_info}}</strong></label>
+                    <!-- <p>{{ index+1 }}. {{ question['question'] }}</p> -->
+                    {% if selected == "Avanzado" %}
+                    <aside id="reading_text" name="readingtext" >{{ reading_text }}</aside>
+                    <p id="question">{{ index+1 }}. {{ question['question'] }}<u id="reply"></u></p>
+                    {% else %}
+                    <p id="question">{{ index+1 }}. {{ question['question'] }}</p>
+                    {% endif %}
+                </div>
+                <section id="questions" class="{{ class_question }}">
+                    {% set i = 0 %}
+                    {% for option in text_list_ramdom(question['options']) %}
+                    {% set i = loop.index %}  {# Asigna loop.index a i #}
+                    <span class="questions_items">
+                    <input class="item" type="radio" id="item-{{ i }}"
+                        name="option" value="{{ option }}" required />
+                    <label class="item" for="item-{{ i }}">{{numero_letra(i) }}. {{ option }}</label>
+                  </span>
+                    {% endfor %}
+                </section>
+                <section>
+                    <div class="button-container-right">
+                        <a href="{{ url_for('start') }}">Salir
+                            <img
+                                src="{{ url_for('static', filename='image/exit-w.png') }}"
+                                alt="Icono Salir" class="icono">
+                        </a>
+
+                        <a id="play-sound">Musica<img id="play-sound-img"
+                                src="/static/image/volume-max-sound-speaker-w.png"
+                                alt="Icono" class="icono"></a>
+
+                        <a href="{{ url_for('level') }}">Inicio
+                            <img
+                                src="{{ url_for('static', filename='image/home-w.png') }}"
+                                alt="Icono Salir" class="icono">
+                        </a>
+                        <!--<input class="playback"type="submit" value="Next" />-->
+                        <button type="submit" class="playback">Siguiente
+                            <img
+                                src="{{ url_for('static', filename='image/arrow-next-right-w.png') }}"
+                                alt="Icono"
+                                class="icono">
+                        </button>
+                    </section>
+                </div>
+            </form>
+        </main>
+
+        <!--carga los escript javascript a ala pagina-->
+        <!--<script src="../static/js/index.js"></script>
+        <script src="../static/js/jquery-3.2.1.slim.min.js"></script>
+        <script src="../static/js/popper.min.js"></script>
+        <script src="../static/js/bootstrap.min.js"></script>-->
+        <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+        <script
+            src="{{ url_for('static', filename='js/jquery-3.2.1.slim.min.js') }}"></script>
+        <script
+            src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+        <script
+            src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/audio.js') }}"></script>
+        <script
+            src="{{ url_for('static', filename='js/responsive.js') }}"></script>
+
+    </body>
+    </body>
+
+</html>
