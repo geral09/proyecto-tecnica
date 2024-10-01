@@ -182,16 +182,16 @@ questions_intermediate = [
 texts_advanced = [
     # titulo 1
     {"title": "The Joy of Gardening",
-        "text": "Gardening is a wonderful hobby that brings joy to many people.\n\nIt allows individuals to connect with nature and grow their own plants.\nGardening can also be a great way to relieve _____ (1) and enjoy fresh air.\nMany gardeners love to cultivate flowers, fruits, and vegetables.\nNot only does gardening provide beautiful scenery, but it also encourages a healthy _____ (2).\nSpending time in the garden can improve mood and promote physical _____ (3).\nWhether you have a small balcony or a large yard, gardening can be a fulfilling _____ (4) for anyone."},
+        "text": "Gardening is a wonderful hobby that brings joy to many people.\n\nIt allows individuals to connect with nature and grow their own plants.\nGardening can also be a great way to relieve ______ (1) and enjoy fresh air.\nMany gardeners love to cultivate flowers, fruits, and vegetables.\nNot only does gardening provide beautiful scenery, but it also encourages a healthy ______ (2).\nSpending time in the garden can improve mood and promote physical ______ (3).\nWhether you have a small balcony or a large yard, gardening can be a fulfilling ______ (4) for anyone."},
     # titulo 2
     {"title": "The Joy of Gardening",
-        "text": "Exercise is essential for maintaining good health and well-being. Regular physical activity helps improve _____ (1) and strengthens the heart.\nIt is also effective in managing weight and reducing the risk of _____ (2).\nMany people enjoy different types of exercise, such as running, swimming, or yoga.\nEngaging in these activities can boost _____ (3) and increase energy levels.\n Additionally, exercise is known to enhance mental clarity and reduce feelings of _____ (4). Incorporating exercise into your daily routine can lead to a happier, healthier life."},
+        "text": "Exercise is essential for maintaining good health and well-being. Regular physical activity helps improve ______ (1) and strengthens the heart.\nIt is also effective in managing weight and reducing the risk of ______ (2).\nMany people enjoy different types of exercise, such as running, swimming, or yoga.\nEngaging in these activities can boost ______ (3) and increase energy levels.\n Additionally, exercise is known to enhance mental clarity and reduce feelings of ______ (4). Incorporating exercise into your daily routine can lead to a happier, healthier life."},
     # titulo 3
     {"title": "The Excitement of Football",
-        "text": "Football is one of the most popular sports in the world. It brings people together and creates a sense of _____ (1). Watching a football match can be thrilling, especially when the score is close.\nPlayers train hard to improve their _____ (2) and teamwork. A successful team relies on strong communication and strategy to win games. Fans often show their support by wearing team _____ (3) and cheering from the stands.\nMoreover, football promotes physical fitness and encourages _____ (4) among players. Whether playing casually or competitively, football is a fantastic way to enjoy the game."},
+        "text": "Football is one of the most popular sports in the world. It brings people together and creates a sense of ______ (1). Watching a football match can be thrilling, especially when the score is close.\nPlayers train hard to improve their ______ (2) and teamwork. A successful team relies on strong communication and strategy to win games. Fans often show their support by wearing team ______ (3) and cheering from the stands.\nMoreover, football promotes physical fitness and encourages ______ (4) among players. Whether playing casually or competitively, football is a fantastic way to enjoy the game."},
     # titulo 4
     {"title": "The Importance of Nutrition",
-        "text": "Nutrition plays a vital role in our overall health and well-being. A balanced diet provides essential _____ (1) that our bodies need to function properly. Consuming a variety of foods, including fruits, vegetables, and whole grains, is crucial for maintaining a healthy _____ (2).\nMany people struggle with making nutritious choices, often opting for processed foods high in _____ (3). These foods can lead to health issues like obesity and diabetes.\nTo improve nutrition, it is important to read food _____ (4) and understand what we are consuming. Making informed choices can lead to a healthier lifestyle and better long-term health."}
+        "text": "Nutrition plays a vital role in our overall health and well-being. A balanced diet provides essential ______ (1) that our bodies need to function properly. Consuming a variety of foods, including fruits, vegetables, and whole grains, is crucial for maintaining a healthy ______ (2).\nMany people struggle with making nutritious choices, often opting for processed foods high in ______ (3). These foods can lead to health issues like obesity and diabetes.\nTo improve nutrition, it is important to read food ______ (4) and understand what we are consuming. Making informed choices can lead to a healthier lifestyle and better long-term health."}
 ]
 # endregion textos de nivel avanzado
 
@@ -199,52 +199,52 @@ texts_advanced = [
 """lista de Preguntas y respuestas del nivel avansado"""
 questions_advanced = [
     # Pregunta 1
-    {"title": "0", "question": "Gardening can also be a great way to relieve _____.", "options": [
+    {"title": "0", "question": "Gardening can also be a great way to relieve ______.", "options": [
         "boredom", "stress", "fatigue", "hunger"], "answer": "stress"},
     # Pregunta 2
-    {"title": "0", "question": "It also encourages a healthy _____.", "options": [
+    {"title": "0", "question": "It also encourages a healthy ______.", "options": [
         "lifestyle", "hobby", "diet", "routine"], "answer": "lifestyle"},
     # Pregunta 3
-    {"title": "0", "question": "Gardening can improve mood and promote physical _____.", "options": [
+    {"title": "0", "question": "Gardening can improve mood and promote physical ______.", "options": [
         "activity", "exhaustion", "injury", "tiredness"], "answer": "activity"},
     # Pregunta 4
-    {"title": "0", "question": "Gardening can be a fulfilling _____ for anyone.", "options": [
+    {"title": "0", "question": "Gardening can be a fulfilling ______ for anyone.", "options": [
         "job", "task", "activity", "chore"], "answer": "activity"},
     # Pregunta 5
-    {"title": "1", "question": "Regular physical activity helps improve _____.", "options": [
+    {"title": "1", "question": "Regular physical activity helps improve ______.", "options": [
         "flexibility", "mood", "strength", "endurance"], "answer": "strength"},
     # Pregunta 6
-    {"title": "1", "question": "It reduces the risk of _____.", "options": [
+    {"title": "1", "question": "It reduces the risk of ______.", "options": [
         "injuries", "illness", "fatigue", "stress"], "answer": "illness"},
     # Pregunta 7
-    {"title": "1", "question": "Engaging in activities can boost _____.", "options": [
+    {"title": "1", "question": "Engaging in activities can boost ______.", "options": [
         "sleep", "confidence", "hunger", "boredom"], "answer": "confidence"},
     # Pregunta 8
-    {"title": "1", "question": "Exercise can reduce feelings of _____.", "options": [
+    {"title": "1", "question": "Exercise can reduce feelings of ______.", "options": [
         "happiness", "stress", "excitement", "energy"], "answer": "stress"},
     # Pregunta 9
-    {"title": "2", "question": "It creates a sense of _____.", "options": [
+    {"title": "2", "question": "It creates a sense of ______.", "options": [
         "competition", "community", "boredom", "solitude"], "answer": "community"},
     # Pregunta 10
-    {"title": "2", "question": "Players train hard to improve their _____.", "options": [
+    {"title": "2", "question": "Players train hard to improve their ______.", "options": [
         "skills", "distractions", "interests", "opinions"], "answer": "skills"},
     # Pregunta 11
-    {"title": "2", "question": "Fans show their support by wearing team _____.", "options": [
+    {"title": "2", "question": "Fans show their support by wearing team ______.", "options": [
         "colors", "food", "flags", "names"], "answer": "colors"},
     # Pregunta 12
-    {"title": "2", "question": "Football promotes physical _____ among players.", "options": [
+    {"title": "2", "question": "Football promotes physical ______ among players.", "options": [
         "fitness", "injury", "fatigue", "stress"], "answer": "fitness"},
     # Pregunta 13
-    {"title": "3", "question": "A balanced diet provides essential _____.", "options": [
+    {"title": "3", "question": "A balanced diet provides essential ______.", "options": [
         "flavors", "nutrients", "snacks", "drinks"], "answer": "nutrients"},
     # Pregunta 14
-    {"title": "3", "question": "A healthy _____ is crucial for our well-being.", "options": [
+    {"title": "3", "question": "A healthy ______ is crucial for our well-being.", "options": [
         "diet", "routine", "activity", "sleep"], "answer": "diet"},
     # Pregunta 15
-    {"title": "3", "question": "Processed foods are often high in _____.", "options": [
+    {"title": "3", "question": "Processed foods are often high in ______.", "options": [
         "vitamins", "minerals", "proteins", "sugar"], "answer": "sugar"},
     # Pregunta 16
-    {"title": "3", "question": "It is important to read food _____.", "options": [
+    {"title": "3", "question": "It is important to read food ______.", "options": [
         "recipes", "labels", "prices", "advertisements"], "answer": "labels"},
 ]
 # endregion array de Preguntas y respuestas del nivel avansado
