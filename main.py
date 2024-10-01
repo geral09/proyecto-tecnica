@@ -2,7 +2,7 @@
 # '''importar de archivos de modulos'''
 import random
 from modules.bd import all_user_quiz_user, get_id_user, all_users, insert_user, insert_user_quiz
-from modules.questions import levels, questions_beginner, questions_intermediate, questions_advanced, questions, add_lectura
+from modules.questions import levels, questions_beginner, questions_intermediate, questions_advanced, questions, texts_advanced, add_lectura
 from modules.funciones import saludar, numero_letra, list_ramdom, text_list_ramdom, text_string
 from flask import Flask, render_template, request, redirect, url_for, jsonify, flash
 # Configuración básica de logging
@@ -41,6 +41,7 @@ title_result = "Resultados de Test"
 title_record = "Historial de Test"
 form_class_size = "form_quiz"
 class_question = "questions"
+reading_title = ""
 reading_text = ""
 selected_option = ""
 questions_only = []
@@ -144,7 +145,7 @@ def accses():
 
 @ app.route('/level_quiz', methods=['POST'])
 def level_quiz():
-    global selected, questions, reading_text
+    global selected, questions, reading_text, reading_title
     # print("Nivel selccionado", selected)
     # print(questions_beginner)
     # print("questions_intermediate ",questions_intermediate)
@@ -168,7 +169,7 @@ def level_quiz():
 
 @ app.route('/index')
 def index():
-    global current_question_index, question, questions, form_class_size, reading_text
+    global current_question_index, question, questions, form_class_size, reading_text, reading_title
 
     random.shuffle(questions)
     # /app.logger.info("texto  ", lectura)  # Imprimir en consola
@@ -195,8 +196,29 @@ def index():
 
     total_questions = len(questions)
 
+    if selected == "Avanzado":
+        for index, quest in enumerate(questions):
+            if "title" in quest:
+                print(
+                    f"La pregunta {index + 1} tiene un título: {quest['title']}")
+                reading_index = int(questions[current_question_index]['title'])
+                reading_title = texts_advanced[reading_index]["title"]
+                reading_text = texts_advanced[reading_index]["text"]
+            else:
+                print(f"La pregunta {index + 1} no tiene un título.")
+
+    # if questions[current_question_index]['title']:
+                # reading_index = int(questions[current_question_index]['title'])
+                # reading_title = texts_advanced[reading_index]["title"]
+                # reading_text = texts_advanced[reading_index]["text"]
+                # print("titulo  existe")
+                # print("titulo ", reading_index)
+    # else:
+                # print("titulo no existe")
+    # reading_text =''.join(item["text"] for item in texts_advanced).replace("[", "").replace("]", "")
+
     # retorna la pagina con las varibles
-    return render_template('index.html', authors=authors, question=question, questions_only=questions_only, levels=levels, score=score, total_questions=total_questions, index=current_question_index, selected=selected, name=name, email=email, title=title_test, form_class_size=form_class_size, class_question=class_question, reading_text=reading_text)
+    return render_template('index.html', authors=authors, question=question, questions_only=questions_only, levels=levels, score=score, total_questions=total_questions, index=current_question_index, selected=selected, name=name, email=email, title=title_test, form_class_size=form_class_size, class_question=class_question, reading_text=reading_text, reading_title=reading_title)
 
 # endregion funcion de ruta de interface de quiz
 
@@ -216,30 +238,29 @@ def answer():
     print(f"la respuestas ", user_answers)
 
     if selected == "Avanzado":
-        print(
-            f"la respuesta de la pregunta {current_question_index+1} selecionada es ", selected_option)
-        print(f"la preguntas ", questions[current_question_index]['question'])
+        # print(            f"la respuesta de la pregunta {current_question_index+1} selecionada es ", selected_option)
+        # print(f"la preguntas ", questions[current_question_index]['question'])
         #    print(f"la  selecionada es {selected} ",reading_text_value)
-        resultado = reading_text.split('______')
+        # = reading_text.split('______')
         # Dividir el texto por comas
         # resultadoarr = resultado.split(',')
 
-        valor = resultado[current_question_index] + ' ' + selected_option
+        # valor = resultado[current_question_index] + ' ' + selected_option
         # Reemplazar "manzana" por "kiwi"
-        for i in range(len(resultado)):
-            if i == current_question_index:
-                resultado[i] = valor
-            else:
-              resultado[i]+='______'
-            # reading_text = ' '.join(resultado).replace('______ ______', '______')
-            print(f"la resultado ", resultado)
+        # for i in range(len(resultado)):
+        #     if i == current_question_index:
+        #         resultado[i] = valor
+        #     else:
+        #       resultado[i]+='______'
+        # reading_text = ' '.join(resultado).replace('______ ______', '______')
+        # print(f"la resultado ", resultado)
         # reading_text=questions[current_question_index]['question']+selected_option
 
-    # print(f"la respuesta del ususario {user_answers}")
+        # print(f"la respuesta del ususario {user_answers}")
 
-    # Actualizar el puntaje
-    if selected_option == correct_answer:
-        score += 1
+        # Actualizar el puntaje
+        if selected_option == correct_answer:
+            score += 1
 
     # Avanzar a la siguiente pregunta
     current_question_index += 1
