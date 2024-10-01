@@ -191,7 +191,19 @@ texts_advanced = [
         "text": "Football is one of the most popular sports in the world. It brings people together and creates a sense of _____ (1). Watching a football match can be thrilling, especially when the score is close.\nPlayers train hard to improve their _____ (2) and teamwork. A successful team relies on strong communication and strategy to win games. Fans often show their support by wearing team _____ (3) and cheering from the stands.\nMoreover, football promotes physical fitness and encourages _____ (4) among players. Whether playing casually or competitively, football is a fantastic way to enjoy the game."},
     # titulo 4
     {"title": "The Importance of Nutrition",
-        "text": "Nutrition plays a vital role in our overall health and well-being. A balanced diet provides essential _____ (1) that our bodies need to function properly. Consuming a variety of foods, including fruits, vegetables, and whole grains, is crucial for maintaining a healthy _____ (2).\nMany people struggle with making nutritious choices, often opting for processed foods high in _____ (3). These foods can lead to health issues like obesity and diabetes.\nTo improve nutrition, it is important to read food _____ (4) and understand what we are consuming. Making informed choices can lead to a healthier lifestyle and better long-term health."}
+        "text": "Nutrition plays a vital role in our overall health and well-being. A balanced diet provides essential _____ (1) that our bodies need to function properly. Consuming a variety of foods, including fruits, vegetables, and whole grains, is crucial for maintaining a healthy _____ (2).\nMany people struggle with making nutritious choices, often opting for processed foods high in _____ (3). These foods can lead to health issues like obesity and diabetes.\nTo improve nutrition, it is important to read food _____ (4) and understand what we are consuming. Making informed choices can lead to a healthier lifestyle and better long-term health."},
+    # titulo  5
+    {"title": "The Magic of Movies",
+        "text": "Movies have a unique ability to transport us to different worlds. They tell stories that evoke a range of _____ (1), from laughter to tears. Watching films can be a great way to spend time with _____ (2) and escape from daily life.There are many genres of movies, including action, comedy, and drama. Each genre offers something different, catering to various _____ (3) and preferences.Filmmaking is an art that requires creativity and teamwork. Directors, writers, and actors work together to bring a story to life on the big _____ (4).Whether you prefer watching at home or in a theater, movies provide entertainment and spark our imagination."},
+    # titulo  6
+    {"title": "The Joy of Travel", "text": "Traveling is a wonderful way to explore new cultures and experience different _____ (1). Whether visiting historical landmarks or enjoying natural landscapes, each trip offers unique opportunities for _____ (2).Many people enjoy planning their journeys, researching destinations, and creating _____ (3) of places to visit. Traveling can also broaden our perspectives and help us understand the world better.While traveling, it’s important to embrace local customs and try new _____ (4). This can lead to unforgettable memories and connections with people from diverse backgrounds.No matter the destination, travel enriches our lives in countless ways."},
+    # titulo  7
+    {"title": "The Impact of Technology",
+        "text": "Technology has transformed our lives in countless ways. From smartphones to artificial intelligence, it shapes how we communicate, work, and _____ (1). Many people rely on technology for daily tasks, making life more _____ (2).In education, technology has opened up new opportunities for learning. Online courses and digital resources provide access to _____ (3) information. This allows students to study at their own pace and explore various subjects.However, the rapid advancement of technology also raises _____ (4) about privacy and security. It’s essential to use technology responsibly and be aware of potential risks.Overall, technology continues to evolve, influencing our future in profound ways."},
+    # titulo  8
+    {"title": "The World of Programming",
+        "text": "Programming is a critical skill in today’s digital age. It involves writing code to create software, applications, and websites. As technology continues to advance, the demand for _____ (1) professionals is rapidly increasing.Learning to program can enhance problem-solving _____ (2) and logical thinking. Many programming languages, such as Python, Java, and JavaScript, offer different features and are used for various _____ (3).In addition to technical skills, teamwork is essential in software development. Developers often collaborate in _____ (4) to build projects efficiently and meet deadlines.As the world becomes more reliant on technology, programming skills will remain valuable and in high demand."}
+
 ]
 # endregion textos de nivel avanzado
 
@@ -246,6 +258,55 @@ questions_advanced = [
     # Pregunta 16
     {"title": "3", "question": "It is important to read food ______", "options": [
         "recipes", "labels", "prices", "advertisements"], "answer": "labels"},
+    # Pregunta 17
+    {"title": "4", "question": "Movies evoke a range of ______", "options": [
+        "emotions", "sounds", "images", "colors"], "answer": "emotions"},
+    # Pregunta 18
+    {"title": "4", "question": "Watching films can be a great way to spend time with ______",
+        "options": ["friends", "strangers", "pets", "books"], "answer": "friends"},
+    # Pregunta 19
+    {"title": "4", "question": "Each genre offers something different, catering to various ______",
+        "options": ["tastes", "sizes", "locations", "colors"], "answer": "tastes"},
+    # Pregunta 20
+    {"title": "4", "question": "Directors, writers, and actors work together to bring a story to life on the big ______",
+        "options": ["screen", "stage", "page", "set"], "answer": "screen"},
+    # Pregunta 21
+    {"title": "5", "question": "Traveling allows us to experience different ______",
+        "options": ["foods", "cultures", "hotels", "activities"], "answer": "cultures"},
+    # Pregunta 22
+    {"title": "5", "question": "Each trip offers unique opportunities for ______", "options": [
+        "relaxation", "adventure", "shopping", "sleeping"], "answer": "adventure"},
+    # Pregunta 23
+    {"title": "5", "question": "Many people create ______", "options": ["lists", "memories", "photos", "dreams"],
+     "answer": "lists"},
+    # Pregunta 24
+    {"title": "5", "question": "of places to visit. It’s important to try new ______",
+        "options": ["activities", "customs", "friends", "routes"], "answer": "customs"},
+    # Pregunta 25
+    {"title": "6", "question": "Technology shapes how we communicate, work, and ______",
+        "options": ["play", "sleep", "travel", "eat"], "answer": "play"},
+    # Pregunta 26
+    {"title": "6", "question": "Making life more ______", "options": [
+        "complex", "difficult", "convenient", "boring"], "answer": "convenient"},
+    # Pregunta 27
+    {"title": "6", "question": "Online courses provide access to ______", "options": [
+        "limited", "outdated", "valuable", "irrelevant"], "answer": "valuable"},
+    # Pregunta 28
+    {"title": "6", "question": "The rapid advancement of technology raises ______", "options": [
+        "questions", "excitement", "ideas", "opportunities"], "answer": "questions"},
+    # Pregunta 29
+    {"title": "7", "question": "The demand for ______", "options": [
+        "artistic", "programming", "medical", "athletic"], "answer": "programming"},
+    # Pregunta 30
+    {"title": "7", "question": "Learning to program can enhance problem-solving ______",
+        "options": ["skills", "hobbies", "interests", "languages"], "answer": "skills"},
+    # Pregunta 31
+    {"title": "7", "question": "Different programming languages are used for various ______",
+        "options": ["purposes", "sizes", "colors", "speeds"], "answer": "purposes"},
+    # Pregunta 32
+    {"title": "7", "question": "Developers often collaborate in ______", "options": [
+        "isolation", "teams", "silence", "sections"], "answer": "teams"}
+
 ]
 # endregion array de Preguntas y respuestas del nivel avansado
 

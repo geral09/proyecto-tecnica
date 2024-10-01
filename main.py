@@ -204,18 +204,8 @@ def index():
                 reading_index = int(questions[current_question_index]['title'])
                 reading_title = texts_advanced[reading_index]["title"]
                 reading_text = texts_advanced[reading_index]["text"]
-            else:
-                print(f"La pregunta {index + 1} no tiene un título.")
-
-    # if questions[current_question_index]['title']:
-                # reading_index = int(questions[current_question_index]['title'])
-                # reading_title = texts_advanced[reading_index]["title"]
-                # reading_text = texts_advanced[reading_index]["text"]
-                # print("titulo  existe")
-                # print("titulo ", reading_index)
-    # else:
-                # print("titulo no existe")
-    # reading_text =''.join(item["text"] for item in texts_advanced).replace("[", "").replace("]", "")
+            # else:
+            #     print(f"La pregunta {index + 1} no tiene un título.")
 
     # retorna la pagina con las varibles
     return render_template('index.html', authors=authors, question=question, questions_only=questions_only, levels=levels, score=score, total_questions=total_questions, index=current_question_index, selected=selected, name=name, email=email, title=title_test, form_class_size=form_class_size, class_question=class_question, reading_text=reading_text, reading_title=reading_title)

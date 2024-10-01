@@ -17,14 +17,14 @@
   padding: 10px 20px 0px 20px;
   margin: 10px 10px 0px 300px;
   width: 700px;
-  height: 600px;
+  height: 300px;
 }
 
 .form_quiz_avanzado {
   padding: 10px 20px 10px 20px;
   margin: 10px 10px 10px 300px;
   width: 700px;
-  height: 1100px;
+  height: auto;
 }
 
 .form-result {

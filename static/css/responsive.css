@@ -284,7 +284,7 @@
     .form_quiz_avanzado {
         margin: 10px 10px 10px 300px;
         width: 700px;
-        height: 1100px;
+        height: auto;
     }
 
     .form-result {
