@@ -199,52 +199,52 @@ texts_advanced = [
 """lista de Preguntas y respuestas del nivel avansado"""
 questions_advanced = [
     # Pregunta 1
-    {"title": "0", "question": "Gardening can also be a great way to relieve _____.", "options": [
+    {"title": "0", "question": "Gardening can also be a great way to relieve ______", "options": [
         "boredom", "stress", "fatigue", "hunger"], "answer": "stress"},
     # Pregunta 2
-    {"title": "0", "question": "It also encourages a healthy _____.", "options": [
+    {"title": "0", "question": "It also encourages a healthy ______", "options": [
         "lifestyle", "hobby", "diet", "routine"], "answer": "lifestyle"},
     # Pregunta 3
-    {"title": "0", "question": "Gardening can improve mood and promote physical _____.", "options": [
+    {"title": "0", "question": "Gardening can improve mood and promote physical ______", "options": [
         "activity", "exhaustion", "injury", "tiredness"], "answer": "activity"},
     # Pregunta 4
-    {"title": "0", "question": "Gardening can be a fulfilling _____.", "options": [
+    {"title": "0", "question": "Gardening can be a fulfilling ______", "options": [
         "job", "task", "activity", "chore"], "answer": "activity"},
     # Pregunta 5
-    {"title": "1", "question": "for anyone. Regular physical activity helps improve _____.", "options": [
+    {"title": "1", "question": "for anyone. Regular physical activity helps improve ______", "options": [
         "flexibility", "mood", "strength", "endurance"], "answer": "strength"},
     # Pregunta 6
-    {"title": "1", "question": "It reduces the risk of _____.", "options": [
+    {"title": "1", "question": "It reduces the risk of ______", "options": [
         "injuries", "illness", "fatigue", "stress"], "answer": "illness"},
     # Pregunta 7
-    {"title": "1", "question": "Engaging in activities can boost _____.", "options": [
+    {"title": "1", "question": "Engaging in activities can boost ______", "options": [
         "sleep", "confidence", "hunger", "boredom"], "answer": "confidence"},
     # Pregunta 8
-    {"title": "1", "question": "Exercise can reduce feelings of _____.", "options": [
+    {"title": "1", "question": "Exercise can reduce feelings of ______", "options": [
         "happiness", "stress", "excitement", "energy"], "answer": "stress"},
     # Pregunta 9
-    {"title": "2", "question": "It creates a sense of _____.", "options": [
+    {"title": "2", "question": "It creates a sense of ______", "options": [
         "competition", "community", "boredom", "solitude"], "answer": "community"},
     # Pregunta 10
-    {"title": "2", "question": "Players train hard to improve their _____.", "options": [
+    {"title": "2", "question": "Players train hard to improve their ______", "options": [
         "skills", "distractions", "interests", "opinions"], "answer": "skills"},
     # Pregunta 11
-    {"title": "2", "question": "Fans show their support by wearing team _____.", "options": [
+    {"title": "2", "question": "Fans show their support by wearing team ______", "options": [
         "colors", "food", "flags", "names"], "answer": "colors"},
     # Pregunta 12
-    {"title": "2", "question": "Football promotes physical _____.", "options": [
+    {"title": "2", "question": "Football promotes physical ______", "options": [
         "fitness", "injury", "fatigue", "stress"], "answer": "fitness"},
     # Pregunta 13
-    {"title": "3", "question": "among players. A balanced diet provides essential _____.", "options": [
+    {"title": "3", "question": "among players. A balanced diet provides essential ______", "options": [
         "flavors", "nutrients", "snacks", "drinks"], "answer": "nutrients"},
     # Pregunta 14
-    {"title": "3", "question": "A healthy _____", "options": [
+    {"title": "3", "question": "A healthy ______", "options": [
         "diet", "routine", "activity", "sleep"], "answer": "diet"},
     # Pregunta 15
-    {"title": "3", "question": "is crucial for our well-being. Processed foods are often high in _____.", "options": [
+    {"title": "3", "question": "is crucial for our well-being. Processed foods are often high in ______", "options": [
         "vitamins", "minerals", "proteins", "sugar"], "answer": "sugar"},
     # Pregunta 16
-    {"title": "3", "question": "It is important to read food _____.", "options": [
+    {"title": "3", "question": "It is important to read food ______", "options": [
         "recipes", "labels", "prices", "advertisements"], "answer": "labels"},
 ]
 # endregion array de Preguntas y respuestas del nivel avansado
