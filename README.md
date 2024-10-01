@@ -6,7 +6,7 @@ A Flask starter template as per [these docs](https://flask.palletsprojects.com/e
 
 Previews should run automatically when starting a workspace.
 
-# Flask Web App Starter
+# Flask Web App Started
 
 A Flask starter template as per [these docs](https://flask.palletsprojects.com/en/3.0.x/quickstart/#a-minimal-application).
 
