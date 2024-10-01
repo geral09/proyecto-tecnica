@@ -1,9 +1,0 @@
-{% from '_helpers.html' import enumerate %}
-
-<h1>{{ question.question }}</h1>
-<form action="{{ url_for('process_answer') }}" method="post">
-    {% for i, answer in enumerate(question.answers) %}
-        <input type="radio" name="answer" value="{{ i }}">{{ answer }}<br>
-    {% endfor %}
-    <input type="submit" value="Submit">
-</form>
